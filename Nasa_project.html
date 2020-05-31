@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NASA spaceship project</title>
+    </head>
+    <body>
+        <p>
+             <!--NB:it takes mars approximately 687days for one complete revolotion and the distance between the earth and mars is 225,000,000Km-->
+             Recall that average speed = average distance/time taken. Assigning s,d and t to speed(Km/hr), distance(Km) and time(hr) respectively, we have that time in hours = </p>
+             <script>
+             var s = 1000; d = 225000000;
+             var t = d/s
+             document.write(t)
+             </script>
+             <p>Converting the value of t to days, we have time to be = </p>
+             <script>
+             var t = (d/s)/24
+             document.write(t)
+             </script>
+             <!-- this implies that it will take the spaceship 9375days to get to mars from eath at the speed of 1,000Km/hr and from mars to earth.-->
+         </p>
+         
+        <p>Since the astronaut will spend a complete revolution in mars before leaving, it means that the total days that will be spent by the astronaut will be = 
+             </p>
+             <script>
+             var rM = 687
+             var Td = (t*2)+rM
+             document.write(Td)
+             </script>
+             <!-- recall that 1litre of oxygen can only last one person for 12hrs, a conversion needs to be done from days to hours-->
+             <p>Since 1day is equivalent to 24 hours, 19,437days will be = </p>
+             <script>
+             var Th = Td*24
+             document.write(Th)</script>
+             <p>
+             To this end, we can get the amount of litres needed for the trip for just one person and this is = </p>
+            <script>
+             var L = Th/12
+             document.write(L)
+             <!-- this implies that for one astronaut in making a trip to mars at the speed of 1000Km/h and spending just one revolution of mars inside the planet, he will need 38,874 litres of oxygen for the whole trip-->
+             
+        </script>
+        <p><h3>NB:The variables are defined as follows;
+        s = speed; d = distance; t = time; rM = revolution of mars; Th = time in hours upon conversion from days; Td = time in days upon conversion from hours; L = litres of oxygen.</h3></p>
+    </body>
+</html>
